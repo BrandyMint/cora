@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Cora::Application.config.secret_key_base = '799840c71f983c171af4378d20425ae7432bcc91be3ed1b72c55c775529dcc8a9dbc3449e7f5af3764cd7d5e1b7b2e1dfa259980255b3977d38f7c86e4b8909c'
+Cora::Application.config.secret_key_base = 'a3d3162f7fd664fbbe6991d116c83268fa1d3ecaddcd2d98a287e2283b9165cbcba86bad9fe0e3cf4a5f652feb170dfdddd75014f725f81326c6be78e5b16849'
