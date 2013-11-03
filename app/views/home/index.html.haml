@@ -1,2 +1,18 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.haml
+.media
+  .pull-left
+    = image_tag 'http://placehold.it/48x48', class: 'media-object', size: '48x48'
+  .media-body
+    %h4.media-heading= cora :title
+    = cora :content
+%hr
+- Cora.backend.element_keys(:user).sort.reverse.each do |key|
+  - user = User.find key.split(':').last
+  .media
+    .pull-left
+      = image_tag user.avatar_url, class: 'media-object', size: '48x48', style: 'width: 48px; height: 48px'
+    .media-body
+      %h4.media-heading
+        = user.name
+        = link_to "@#{user.nickname}", user.url
+      = cora key
+

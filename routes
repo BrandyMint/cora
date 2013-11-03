@@ -1,0 +1,18 @@
+     Prefix Verb URI Pattern                        Controller#Action
+       root GET  /                                  home#index
+            GET  /auth/:provider/callback(.:format) omniauth_session#create
+            POST /auth/:provider/callback(.:format) omniauth_session#create
+     logout GET  /logout(.:format)                  sessions#destroy
+      login GET  /login(.:format)                   sessions#new
+     signup GET  /signup(.:format)                  users#new
+cora_engine      /cora                              Cora::Engine
+
+Routes for Cora::Engine:
+    elements GET    /elements(.:format)          cora/elements#index
+             POST   /elements(.:format)          cora/elements#create
+ new_element GET    /elements/new(.:format)      cora/elements#new
+edit_element GET    /elements/:id/edit(.:format) cora/elements#edit
+     element GET    /elements/:id(.:format)      cora/elements#show
+             PATCH  /elements/:id(.:format)      cora/elements#update
+             PUT    /elements/:id(.:format)      cora/elements#update
+             DELETE /elements/:id(.:format)      cora/elements#destroy

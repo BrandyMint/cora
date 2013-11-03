@@ -1,0 +1,22 @@
+{
+  "name": "cora",
+  "version": "0.0.9",
+  "main": [
+    "js/cora.js",
+    "css/cora.css"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "gitHead": "642db8ce47d8bb29036ae01dd1058e7a24918799",
+  "readme": "ERROR: No README.md file found!",
+  "readmeFilename": "README.md",
+  "_id": "cora@0.0.9",
+  "description": "ERROR: No README.md file found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/BrandyMint/cora-js.git"
+  }
+}
